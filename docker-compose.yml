@@ -1,0 +1,12 @@
+services:
+  nginx:
+    image: nginx:1.19.6
+    restart: always
+    volumes:
+      - ./nginx:/etc/nginx/templates
+    ports:
+      - 80:80
+
+  gotenberg:
+    image: gotenberg/gotenberg:7
+    restart: always
