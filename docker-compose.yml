@@ -14,7 +14,7 @@ services:
     restart: always
   
   datadog:
-    build: datadog
+    image: datadog/agent:latest
     environment:
      - DD_API_KEY=${DD_API_KEY}
      - DD_SITE=datadoghq.eu
