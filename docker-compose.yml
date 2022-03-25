@@ -25,5 +25,5 @@ services:
     labels:
       com.datadoghq.ad.check_names: '["nginx"]'
       com.datadoghq.ad.init_configs: '[{}]'
-      com.datadoghq.ad.instances: '[{"nginx_status_url": "http://%%host%%:81/nginx_status/"}]'
+      com.datadoghq.ad.instances: '[{"nginx_status_url": "http://nginx:81/nginx_status/"}]'
       com.datadoghq.ad.logs: '[{"source":"nginx","service":"nginx"}]'
