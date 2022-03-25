@@ -6,6 +6,8 @@ services:
       - ./nginx:/etc/nginx/templates
     ports:
       - 80:80
+    environment:
+      - AUTH_TOKEN=${AUTH_TOKEN}
 
   gotenberg:
     image: gotenberg/gotenberg:7
