@@ -23,7 +23,7 @@ services:
      - /proc/:/host/proc/:ro
      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
     labels:
-     - com.datadoghq.ad.check_names: '["nginx"]'
-     - com.datadoghq.ad.init_configs: '[{}]'
-     - com.datadoghq.ad.instances: '[{"nginx_status_url": "http://%%host%%:81/nginx_status/"}]'
-     - com.datadoghq.ad.logs: '[{"source":"nginx","service":"nginx"}]'
+      com.datadoghq.ad.check_names: '["nginx"]'
+      com.datadoghq.ad.init_configs: '[{}]'
+      com.datadoghq.ad.instances: '[{"nginx_status_url": "http://%%host%%:81/nginx_status/"}]'
+      com.datadoghq.ad.logs: '[{"source":"nginx","service":"nginx"}]'
